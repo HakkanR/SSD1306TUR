@@ -26,7 +26,7 @@ class SSD1306TUR : public Adafruit_SSD1306
 {
 public:
 	// NEW CONSTRUCTORS -- recommended for new projects
-	SSD1306TUR(uint8_t w, uint8_t h, TwoWire *twi = &Wire,
+	SSD1306TUR(uint8_t w, uint8_t h, TwoWire *twi,
 			   int8_t rst_pin = -1, uint32_t clkDuring = 400000UL,
 			   uint32_t clkAfter = 100000UL);
 	SSD1306TUR(uint8_t w, uint8_t h, int8_t mosi_pin, int8_t sclk_pin,

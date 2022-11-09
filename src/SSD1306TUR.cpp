@@ -25,7 +25,7 @@
 #include "SSD1306TUR.h"
 
 SSD1306TUR::SSD1306TUR(uint8_t w, uint8_t h, TwoWire *twi = &Wire,
-					   int8_t rst_pin = -1, uint32_t clkDuring,
+					   int8_t rst_pin, uint32_t clkDuring,
 					   uint32_t clkAfter)
 	: Adafruit_SSD1306(w, h, twi, rst_pin, clkDuring, clkAfter)
 {
@@ -49,10 +49,12 @@ SSD1306TUR::SSD1306TUR(int8_t dc_pin, int8_t rst_pin, int8_t cs_pin)
 	: Adafruit_SSD1306(dc_pin, rst_pin, cs_pin)
 {
 }
-SSD1306TUR::SSD1306TUR(int8_t rst_pin = -1)
+
+SSD1306TUR::SSD1306TUR(int8_t rst_pin)
 	: Adafruit_SSD1306(rst_pin)
 {
 }
+
 size_t SSD1306TUR::write(uint8_t chr)
 {
 	if (chr == 195)
