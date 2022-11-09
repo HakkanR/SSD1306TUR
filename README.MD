@@ -46,7 +46,13 @@ display.display();
 ```
 ## Dependencies 
 * [Adafruit_SSD1306](https://github.com/adafruit/Adafruit_SSD1306)
-  
+
+## Download
+You can download this on
+* [Github](https://github.com/HakkanR/SSD1306TUR)
+* Arduino Library Manager
+* PlatformIO Libraries
+
 ## Available Fonts 
 * FreeSansBold12pt7bTR.h
   
