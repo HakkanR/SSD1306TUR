@@ -53,14 +53,6 @@ SSD1306TUR::SSD1306TUR(int8_t rst_pin = -1)
 	: Adafruit_SSD1306(rst_pin)
 {
 }
-SSD1306TUR::~SSD1306TUR()
-{
-	if (buffer)
-	{
-		free(buffer);
-		buffer = NULL;
-	}
-}
 size_t SSD1306TUR::write(uint8_t chr)
 {
 	if (chr == 195)

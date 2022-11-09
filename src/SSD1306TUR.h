@@ -39,7 +39,6 @@ public:
 			   int8_t rst_pin, int8_t cs_pin);
 	SSD1306TUR(int8_t dc_pin, int8_t rst_pin, int8_t cs_pin);
 	SSD1306TUR(int8_t rst_pin = -1);
-	~SSD1306TUR(void);
 	virtual size_t write(uint8_t);
 private:
 	void resetFs();
