@@ -6,12 +6,13 @@
  * displays, It targets to bring ability to use Turkish alphabet freely with these
  * oled screens. Adafruit_SSD1306 and Adafruit_GFX libraries are needed to use this
  * library but not enought to have Turkish letters, You should use font files in folder
- * TrFonts of this library.
+ * TrFonts of this library. Notice that file names end with TR expression.
  * 
  * @version 1.0
  * @date 2022-11-09
  *
- * @copyright BDS License, all above text must be included any redistribution.
+ * @copyright 
+ * BDS License, all above text must be included any redistribution.
  *
  */
 #ifndef SSD1306TUR_H_
