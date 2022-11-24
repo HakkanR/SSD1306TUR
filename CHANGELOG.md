@@ -6,6 +6,6 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Added
 
-## [1.0.1] - Date
+## [1.0.1] - Not Released Yet
 - The default text color is set to SSD1306_WHITE to eliminate the need to use setTextColor function. 
 - Corner Names for drawCircleHelper function.
