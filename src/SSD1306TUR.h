@@ -8,10 +8,10 @@
  * library but not enought to have Turkish letters, You should use font files in folder
  * TrFonts of this library. Notice that file names end with TR expression.
  *
- * @version 1.0
+ * @version 1.0.1
  * @date 2022-11-09
  * @section for more information please visit :
- * https://www.devrelerim.com/2022/11/ssd1306tur-ssd1306-oled-ekran-turkce.htm
+ * https://www.devrelerim.com/2022/11/ssd1306tur-ssd1306-oled-ekran-turkce.html
  * https://www.youtube.com/HakkanR
  * https://github.com/HakkanR/SSD1306TUR
  * @copyright
@@ -22,6 +22,13 @@
 #define SSD1306TUR_H_
 #include <Adafruit_GFX.h>
 #include <Adafruit_SSD1306.h>
+
+// Corner Defines for Circle Helper Function
+#define CORNLUP 1 // Top left corner of a circle
+#define CORNLDN 8 // Buttom left corner of a circle
+#define CORNRUP 2 // Top right corner of a circle
+#define CORNRDN 4 // Buttom right corner of a circle
+
 class SSD1306TUR : public Adafruit_SSD1306
 {
 public:

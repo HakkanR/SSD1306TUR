@@ -13,10 +13,10 @@
  * https://github.com/adafruit/Adafruit_SSD1306 Adafruit_SSD1306
  * be sure you have installed latest versions of these libs before
  * use this lib.
- * @version 1.0
+ * @version 1.0.1
  * @date 2022-11-09
  * @section for more information please visit :
- * https://www.devrelerim.com/2022/11/ssd1306tur-ssd1306-oled-ekran-turkce.htm
+ * https://www.devrelerim.com/2022/11/ssd1306tur-ssd1306-oled-ekran-turkce.html
  * https://www.youtube.com/HakkanR
  * https://github.com/HakkanR/SSD1306TUR
  * @copyright
@@ -29,30 +29,36 @@ SSD1306TUR::SSD1306TUR(uint8_t w, uint8_t h, TwoWire *twi = &Wire,
 					   uint32_t clkAfter)
 	: Adafruit_SSD1306(w, h, twi, rst_pin, clkDuring, clkAfter)
 {
+	textcolor = textbgcolor = SSD1306_WHITE;
 }
 SSD1306TUR::SSD1306TUR(uint8_t w, uint8_t h, int8_t mosi_pin, int8_t sclk_pin,
 					   int8_t dc_pin, int8_t rst_pin, int8_t cs_pin)
 	: Adafruit_SSD1306(w, h, mosi_pin, sclk_pin, dc_pin, rst_pin, cs_pin)
 {
+	textcolor = textbgcolor = SSD1306_WHITE;
 }
 SSD1306TUR::SSD1306TUR(uint8_t w, uint8_t h, SPIClass *spi, int8_t dc_pin,
 					   int8_t rst_pin, int8_t cs_pin, uint32_t bitrate)
 	: Adafruit_SSD1306(w, h, spi, dc_pin, rst_pin, cs_pin, bitrate)
 {
+	textcolor = textbgcolor = SSD1306_WHITE;
 }
 SSD1306TUR::SSD1306TUR(int8_t mosi_pin, int8_t sclk_pin, int8_t dc_pin,
 					   int8_t rst_pin, int8_t cs_pin)
 	: Adafruit_SSD1306(mosi_pin, sclk_pin, dc_pin, rst_pin, cs_pin)
 {
+	textcolor = textbgcolor = SSD1306_WHITE;
 }
 SSD1306TUR::SSD1306TUR(int8_t dc_pin, int8_t rst_pin, int8_t cs_pin)
 	: Adafruit_SSD1306(dc_pin, rst_pin, cs_pin)
 {
+	textcolor = textbgcolor = SSD1306_WHITE;
 }
 
 SSD1306TUR::SSD1306TUR(int8_t rst_pin)
 	: Adafruit_SSD1306(rst_pin)
 {
+	textcolor = textbgcolor = SSD1306_WHITE;
 }
 
 size_t SSD1306TUR::write(uint8_t chr)
