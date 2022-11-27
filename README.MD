@@ -22,7 +22,7 @@
 define LCD specs fit your screen: 
 ```c
 #define SCREEN_WIDTH 128
-#define SCREEN_HEIGHT 32
+#define SCREEN_HEIGHT 64
 #define SCREEN_ADDRESS 0x3C
 ```
 initiate the object as any name you want, I choose display
