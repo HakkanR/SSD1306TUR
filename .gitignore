@@ -3,6 +3,7 @@
 *.xlsx
 *.ini
 *.db
+*.code-workspace
 #*
 main.*
 .vscode/
