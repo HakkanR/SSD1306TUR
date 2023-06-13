@@ -14,7 +14,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 - Corner Names for drawCircleHelper function.
 - writeTr_128x64_i2c example ino file
 
-## [1.0.2] - 2023-06-13
+## [1.0.2] - 2022-11-09
 
 ### Added
 
